@@ -17,6 +17,13 @@ public class Principal {
         Algoritmo32 objeto3 = new Algoritmo32();
         IO.println(objeto3.mostrarSala("Maria Eduarda"));
         String nome3 = JOptionPane.showInputDialog("Entre com o seu nome");
-        JOptionPane.showMessageDialog(null, objeto3.mostrarSala(nome3));
+        //JOptionPane.showMessageDialog(null, objeto3.mostrarSala(nome3));
+        //Classe objeto = new Construtor();
+        //construtor default
+        Algoritmo33 alg33 = new Algoritmo33();
+        alg33.inserirChave(3);
+        IO.println(alg33.retornarChave());
+        IO.println(alg33.abrirPorta());  
+
     }    
 }
