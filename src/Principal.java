@@ -23,7 +23,15 @@ public class Principal {
         Algoritmo33 alg33 = new Algoritmo33();
         alg33.inserirChave(3);
         IO.println(alg33.retornarChave());
-        IO.println(alg33.abrirPorta());  
-
+        IO.println(alg33.abrirPorta()); 
+        
+        Algoritmo34 alg34 = new Algoritmo34();
+        alg34.setPrimeiroNumero(10);
+        alg34.setSegundoNumero(5);
+        IO.println(alg34.getPrimeiroNumero());
+        IO.println(alg34.getSegundoNumero());
+        
+        Algoritmo35 alg35 = new Algoritmo35();
+        
     }    
 }
