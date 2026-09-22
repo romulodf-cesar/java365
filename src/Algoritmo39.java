@@ -1,3 +1,5 @@
+import java.awt.TrayIcon.MessageType;
+
 import javax.swing.JOptionPane;
 
 public class Algoritmo39 {
@@ -19,18 +21,21 @@ public class Algoritmo39 {
         Metro m2 = new Metro("BVF 4534");
         Metro m3 = new Metro("BNH 2345");
 
-        String opcao = JOptionPane.showInputDialog("1-Onibus 2-Metro 3-Sair");
-        int op = Integer.parseInt(opcao);
+        int op;
         do{
-               
+                String opcao = JOptionPane.showInputDialog("1-Onibus 2-Metro 3-Sair");
+                op = Integer.parseInt(opcao);               
                 if(op==1){
                     JOptionPane.showMessageDialog(null,o1.calcularTarifa());
+                    JOptionPane.showMessageDialog(null, "Frota: "+Onibus.getCont());
                 }else if(op==2){
                     JOptionPane.showMessageDialog(null, m1.calcularTarifa());
+                }else if(op == 3){
+                    JOptionPane.showMessageDialog(null, "Fechando sistema...");
                 }else{
-                    JOptionPane.showMessageDialog(null, "opção inválida");
+                    JOptionPane.showMessageDialog(null, "Opção Inválida","SENAI",JOptionPane.ERROR_MESSAGE);
                 }
-
+            
         }while(op != 3);
      
    }
