@@ -1,11 +1,18 @@
 public class Algoritmo48 {
-    //Considere a matriz quadrada
-    /*
-        20,50,80
-        45,60,90
-        45,67,89
-            
-    */
-   //faça um algoritmo que mostre apenas os valores 
-   //da diagonal principal.
+     void main(){
+
+       int conjunto [][] = 
+       {{81,2,3},
+        {4,82,5},
+        {6,7,83}};
+
+        for(int i = 0; i< conjunto.length; i++){
+            for (int j = 0; j< conjunto.length; j++){                
+                if ( conjunto[i] == conjunto[j]){
+                    IO.println(conjunto[i][j]);
+                }
+           }  
+        }
+     }    
+   
 }
