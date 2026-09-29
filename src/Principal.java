@@ -1,5 +1,11 @@
 import javax.swing.JOptionPane;
 
+import br.com.romulo.curso.poo.Algoritmo31;
+import br.com.romulo.curso.poo.Algoritmo32;
+import br.com.romulo.curso.poo.Algoritmo33;
+import br.com.romulo.curso.poo.Algoritmo34;
+import br.com.romulo.curso.poo.Algoritmo35;
+
 public class Principal {
     void main(){
         //É uma instância de uma classe
