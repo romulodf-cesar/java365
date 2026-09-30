@@ -69,7 +69,7 @@ public class Algoritmo53A {
         // Buscar pela matricula
         IO.println("Digite a matricula");
         String busca = IO.readln();
-        Estudante encontrado = estudantes.get(busca);
+        Estudante encontrado = estudantes.get(busca.trim().toUpperCase());
 
         if (encontrado != null) {
            IO.println("Encontrado: " + busca + " -> " + encontrado);
