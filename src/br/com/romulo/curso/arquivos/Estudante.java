@@ -28,5 +28,10 @@ public class Estudante {
    }
    public void setAno(int ano) {
     this.ano = ano;
-   }    
+   }   
+   
+   @Override
+   public String toString() {
+      return "Nome: " + nome + " | Curso: " + curso + " | Ano: " + ano;
+   }
 }

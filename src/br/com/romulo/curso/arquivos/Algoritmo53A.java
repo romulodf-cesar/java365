@@ -25,10 +25,8 @@ public class Algoritmo53A {
         // Map<String, Aluno> dicionarioAlunos = new HashMap<>();
         //Generics - Definir Qualquer Tipo <T> - Generico
         //Toda a classe Object
-
         Map<String,Estudante> estudantes = new HashMap<>();
         // dicionarioAlunos.put("MAT-2026-001", new Aluno("Ana Silva", "Engenharia de Software", 2026)); 
-        
         IO.println("Java Doctor - Escola  de Programação");
         Estudante e1 = new Estudante("JP","ADS",2025);
         estudantes.put("MAT-1223",e1);  
@@ -56,13 +54,36 @@ public class Algoritmo53A {
         Estudante e12 = new Estudante("Thalita","ADS",2026);
         estudantes.put("MAT-1234",e12);
         estudantes.put("MAT-1235",new Estudante("Rômulo","GTI",2012));
-        
         // Listar todos os estudantes cadastrados
-        
+        for (Estudante e : estudantes.values()) {
+            IO.println(e);
+        }
+       
+        // Listar todos os estudantes com a matrícula
+        //aurelio.get("manga")
+            for (String matricula : estudantes.keySet()) {
+              Estudante e = estudantes.get(matricula);
+              IO.println(matricula + " -> " + e);
+        }   
+        // Buscar pela matricula  
+        // Buscar pela matricula
+        IO.println("Digite a matricula");
+        String busca = IO.readln();
+        Estudante encontrado = estudantes.get(busca);
 
-        // Buscar um estudante pela Matricula
+        if (encontrado != null) {
+           IO.println("Encontrado: " + busca + " -> " + encontrado);
+        } else {
+           IO.println("Matrícula " + busca + " não encontrada.");
+        }    
+        IO.print("Daniel -----");
+        for (Map.Entry<String, Estudante> entry : estudantes.entrySet()) {
+            String matricula = entry.getKey();
+            Estudante estudante = entry.getValue();
+            IO.println("Matrícula: " + matricula + " | Nome: " + estudante.getNome() + " | Curso: " + estudante.getCurso() + " | Ano: " + estudante.getAno());
+            IO.println("\n---------------------------\n");
+        }
 
-        
     }
 
 }
