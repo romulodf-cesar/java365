@@ -1,0 +1,23 @@
+/*
+   BELEZA do SITE
+       -Cor
+       -Tamanho
+       -Fonte
+       -Bordas
+       -Sombra
+       
+*/
+body{
+    background-color: #33231A;
+    color:#F0F0F0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+   Minha Paleta
+   #663C24
+   #996D54
+   #CCAB99
+   #CCAB99
+   #FFE7D9
+*/
