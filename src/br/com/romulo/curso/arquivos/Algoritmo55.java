@@ -37,29 +37,6 @@ public class Algoritmo55 {
                 break;
             }
 
-<<<<<<< HEAD
-     /*
-       Avaliação de Capacidades
-       (cada item: 3,10 pontos)
-       - Elaborar e Explicar um Try Catch Finally (Seg)
-       - Uso de JOptionPane ou JFrame ou outros SWING
-       - Elaborar e Explicar DateTimeFormatter (Ter)
-       - Elaborar e Explicar LocalDateTime (Ter)
-       - Elaborar e Explicar FileWriter (Ter)
-       - Elaborar e Explicar HashMap (Qua)
-       - Elaborar e Explicar Map (Qua)
-       - Elaborar e Explicar a Organização do Código (Qui)
-     
-     
-     */
-
-       //try catch
-       //arquivo
-       //hashmap
-       //a - r - p - a - r
-    
-}
-=======
             try {
                 opcao = Integer.parseInt(entradaOpcao);
             } catch (NumberFormatException e) {
@@ -156,4 +133,3 @@ public class Algoritmo55 {
         } while (opcao != 6);
     }
 }
->>>>>>> 2f68b34a813ca89fef57d73daeeedf2030f51b49
