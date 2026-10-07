@@ -8,8 +8,8 @@
        
 */
 body{
-    background-color: #33231A;
-    color:#F0F0F0;
+    background-color: #f1f1f0;
+    color:#131212;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,3 +21,8 @@ body{
    #CCAB99
    #FFE7D9
 */
+/* html - seletor
+   scroll-behavior - propriedade*/
+html{
+    scroll-behavior: smooth;
+}
