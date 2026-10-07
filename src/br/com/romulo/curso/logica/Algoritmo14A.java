@@ -1,4 +1,4 @@
-import br.com.romulo.curso.colecoes.*;
+package br.com.romulo.curso.logica;
 class Algoritmo14A{
   void main(){
     int num = 2;
